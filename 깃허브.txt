@@ -1,0 +1,36 @@
+
+1. 경로 이동
+\ => /
+cd E:/KHR/06월/06_24_03_포토폴리오_프로젝트_POFO_반응형_배포
+
+2. 깃 설정
+git init
+
+3. 인터넷 웹 브라우저에서 깃 허브 접속 로그인하기
+
+4. 포토폴리오 프로젝트 저장소 (리파지토이 Repository) 만들기
+
+5. 원격 저장소 리파지토리 주소 복사하기
+https://github.com/HYO0984/pofo.git
+
+6.깃배쉬에서 환경설정(config) 사용자(user) 아이디 입력하기
+
+git config user.name'아이디(hoo0049)'
+
+7.깃배쉬에서 환경설정(config) 사용자 이메일 입력하기
+
+git config user.email'이메일(hoo0049@naver.com)'
+
+8. 원격 접속
+git remote add origin 주소(https://github.com/HYO0984/pofo.git)
+  - 접속 확인
+  git remote -v
+
+9. 스테이징하기 = 웹 파일 모두 추가하기
+git add.
+10. 커밋하기 =  올릴 파일에 대한 설명도 추가하기
+git commit -m '반응형 포토폴리오'
+11. 푸쉬하기
+git push origin master
+
+

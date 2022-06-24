@@ -1,0 +1,476 @@
+//반응형 기본 형식 
+//@media all and (max-width:최대크기일때) {
+// style.css 가져오기
+//}
+@media all and (max-width:1170px) {
+  #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .caption {
+    h3{font-size: 1.5384615384615vw;}
+    h2{font-size: 5.982905983vw}
+  }
+  #wrap #main #section2 .container .gap .wrap .content > ul > li .col-gap .col-wrap .top img {
+            filter: grayscale(0);
+            img:hover{filter: grayscale(1);}
+  }
+  #wrap #main #section6 .container .gap .wrap .content 
+  > ul{ flex-flow: row wrap;
+    > li {
+      width: 50%;
+      .col-gap{
+        margin: 5px;
+      }
+    }
+  } 
+  #wrap #quick {
+    display: none;
+  }
+  #wrap #main #section7 .container .gap .wrap .content > ul
+  { flex-flow:nowrap;
+    > li {
+      width: 50%;
+      .col-gap{
+        margin: 15px;
+      }
+    }
+  }
+  #wrap #main #section8 .container .gap .wrap .content > ul{
+    flex-flow: column nowrap;
+    > li {
+      width: 100%;
+      &:nth-child(1){
+        .img-box{height: 400px;}
+      }
+      &:nth-child(2){
+        ul{
+          li{
+            h2{font-size: 2.564102564vw;} // 100/1170 =11.7  30px / 11.7 = 2.564102564vw;
+          }
+          text-align: center;
+        }
+      } 
+    }
+  }
+  #wrap #main #section9 .container .gap .wrap .content > ul{
+     flex-flow:row wrap;
+    > li {
+      width: 50%;
+      .col-gap{
+        margin: 15px;
+      }
+    }
+  }
+}
+//메인메뉴
+@media all and (max-width:1024px) {
+  #wrap #header .container .gap .wrap .mobile-btn-box{
+    display: block;
+  }
+  #wrap #header .container .gap .wrap #nav {
+    align-items: flex-start; //위쪽 정렬
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,1);
+    height: 100vh; //창 높이 100%
+    //height: auto;
+    overflow-y: auto;
+    //transition: all .3s;
+    display: none;
+    > ul{
+      height: auto;
+      display: block; 
+      width: 100%;
+      >li{
+        height: auto;
+        margin: 0;
+        border-bottom: 1px solid #444;
+        > a.main-btn{
+          color: #fff; padding: 0 20px;
+          height: 38px; // 아래 메뉴 보이도록
+          line-height: 38px;
+
+        }
+        .sub.sub1356{
+          z-index: 10;
+          display:none;
+          width: 100%;
+          position: relative;
+          left: 0;
+          top: 0;
+          .sub-gap{
+            padding: 0 20px;
+            ul{
+              width: 100%;
+              display: block;
+              li{
+                width: (100%);
+                border-right: 0;
+                dl{
+                  padding: 0 20px;
+                  dt,
+                  dd{
+                     border-bottom: 1px solid #303030;
+                  }
+                }
+                .sub-img{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        .sub.sub24 {
+          display: none;
+          width: 100%;
+          position: relative;
+          left: 0;
+          top: 0;
+          .sub-gap{
+            padding: 0 20px;
+            ul{
+             li{
+                a{
+                  > span{
+                    color: #fff;
+                    &::after{display: none;
+                    }
+                  }
+                }
+                .sub-sub{
+                  border-top: 1px solid #303030;
+                  display: block;
+                  position: relative; top: 0px; left: 0;
+                  width: 100%; background: #232323;
+                  .sub-gap{
+                    padding: 0;
+                    ul{
+                      li{
+                        border-bottom: 1px solid #303030;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #wrap #header.show{
+    .container{
+      .gap{
+        .wrap{
+          #nav{
+            top: 60px;
+            > ul {
+              > li {
+                .sub.sub1356,
+                .sub.sub24 {top: 0;}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media all and (max-width:991px) {
+  #wrap #main #section2,
+  #wrap #main #section3 {
+    padding: 70px 0 ;
+  }
+  #wrap #main #section2 .container .gap .wrap .content ,
+  #wrap #main #section3 .container .gap .wrap .content {
+    padding: 6.838% 0 0 0;
+  }
+  #wrap #main #section3 .container .gap .wrap .content > ul {
+  display: flex;
+  flex-flow: row wrap;
+  > li {width: 50%;
+    .col-gap {
+      margin: 15px;
+      }
+    }
+  }
+  #wrap #quick {
+    display: none;
+  }
+}
+
+@media all and (max-width:980px){
+  #wrap #main #section5 .container .gap .wrap .content .svg-box{
+    flex-flow: row wrap;
+    li {
+      width: 50%;
+      .col-gap {
+        margin: 15px;
+        }
+    }
+  }
+  #wrap #main #section10 .container .gap .wrap .content form {
+    width: 80%;
+  }
+  #wrap  #footer .container .gap .wrap .content {
+    text-align: center;
+    .top {
+      ul {
+        flex-flow: row wrap;
+        li {
+          width: 100%;
+          padding:5px 0;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width:920px){
+  #wrap #main #section2 .container .gap .wrap .content{
+    > ul { flex-flow: row wrap; 
+      > li{
+        width: 50%;
+        .col-gap {
+          margin: 15px;
+        }
+      }
+    }
+  }
+  #wrap #main #section3 .container .gap .wrap .title h2 {
+    font-size: 25px;
+  }
+  #wrap #main #section4 .container .gap .wrap #nav > ul > li {
+    margin: 10px 0;
+    display: block;
+  }
+  #wrap #main #section9 .container .gap .wrap .content > ul{
+    flex-flow:row wrap;
+   > li {
+     width: 100%;
+     .col-gap{
+       margin: 15px;
+     }
+   }
+ }
+}
+
+@media all and (max-width:780px){
+
+  #wrap #main #section6 .container .gap .wrap .content 
+  > ul{ flex-flow: row wrap;
+    > li {
+      width: 100%;
+      .col-gap{
+        margin: 5px;
+      }
+    }
+  }
+  #wrap #main #section7 .container .gap .wrap .content > ul
+  { flex-flow: row wrap;
+    > li {
+      width: 100%;
+      .col-gap{
+        margin:15px;
+      }
+    }
+  }
+  #wrap #main #section8 .container .gap .wrap .content > ul{
+    flex-flow: column nowrap;
+    > li {
+      width: 100%;
+      &:nth-child(1){
+        .img-box{height: 400px;}
+      }
+      &:nth-child(2){
+        ul{
+          padding: 14.5264% * .75; // 줄이기
+          li{
+            h2{font-size: 2.564102564vw * 1.5;} // 100/1170 =11.7  30px / 11.7 = 2.564102564vw; // 1.5 배 화질 좋도록 크게
+            p{line-height: 160%;}
+            
+          }
+          text-align: center;
+        }
+    }
+  }
+  }
+}
+
+
+@media all and (max-width:740px){
+  $section-padding: 60px 0;
+  #wrap #main #section2 ,
+  #wrap #main #section3 {
+    padding: $section-padding;
+  }
+  
+  
+  #wrap #main #section2 .container .gap .wrap .title  {
+    width: 80%;
+    margin:0 auto;
+    h2 {
+      br {
+        display: none;
+      }
+    }
+  }
+  #wrap #main #section4 .container .gap .wrap #nav {
+    padding:50px 0;
+    ul {
+      li {       
+        margin:10px 0;
+        display:block;       
+      }
+    }      
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:660px){
+  #wrap #main #section2 .container .gap .wrap .title h2  {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 22px;
+    br {display: none;}
+  }
+  #wrap #main #section2 .container .gap .wrap .content{
+    > ul { flex-flow: row wrap; 
+      > li{
+        width: 100%;
+        .col-gap {
+          margin: 20px 15px;
+        }
+      }
+    }
+  }
+  #wrap #main #section9 .container .gap .wrap .content{
+    padding: 40px 0 0 0;
+
+ }
+}
+
+@media all and (max-width:600px){
+  #wrap #main #section3 .container .gap .wrap .title h2 {
+    font-size: 20px;
+  }
+  #wrap #main #section7 .container .gap .wrap .content {
+    padding: 50px 0 0 0;
+    .title{
+      h2 {
+      line-height: 140%;
+      font-size: 20px;
+     }
+    }
+  }
+}
+
+
+@media all and (max-width:500px){
+  #wrap #main #section2 .container .gap .wrap .title h2  {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: justify;
+    br {display: none;}
+  }
+  #wrap #main #section3 .container .gap .wrap .content > ul {
+    flex-flow: row wrap;
+    > li {width: 100%;
+      .col-gap {
+        margin: 15px;
+      }
+    }
+  }
+  #wrap #main #section3 .container .gap .wrap .title h2 {
+    font-size: 18px;
+  }
+  #wrap #main #section6 .container .gap .wrap .content > ul > li .col-gap .col-wrap .caption ul li {
+  padding: 6px 0;
+    &:last-child {
+      padding-top: 1.5%;
+    }
+  }
+  #wrap #main #section9 .container .gap .wrap .title h2 {
+    font-size: 25px;
+    line-height: 140%;
+  }
+
+}
+
+@media all and (max-width:480px){
+  #wrap #main #section5 .container .gap .wrap .content .svg-box{
+    flex-flow: row wrap;
+    li {
+      width: 100%;
+      .col-gap {
+        margin: 20px 15px;
+      }
+    }
+  }
+  #wrap #main #section8 .container .gap .wrap .content > ul{
+    flex-flow: column nowrap;
+    > li {
+      width: 100%;
+      &:nth-child(1){
+        .img-box{height: 330px;}
+      }
+      &:nth-child(2){
+        ul{
+          padding: 14.5264% * .6; // 줄이기
+          li{
+            h2{font-size: 2.564102564vw * 1.5;} // 100/1170 =11.7  30px / 11.7 = 2.564102564vw; // 1.5 배 화질 좋도록 크게
+            p{line-height: 140%;}
+          }
+          text-align: center;
+        }
+      }
+    }
+  }
+  #wrap #main #section7 .container .gap .wrap .title h2 {
+    font-size: 20px;
+    line-height: 140%;
+  }
+  #wrap #main #section9 .container .gap .wrap .title h2 {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+@media all and (max-width:320px){
+
+  #wrap #main #section6 .container .gap .wrap .content 
+  > ul { flex-flow: row wrap;
+    > li {
+
+      width: 100%;
+      .col-gap{
+        margin: 5px;
+      }
+    }
+  } 
+}
